@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - HappyTail Grooming</title>
+    <link rel="stylesheet" href="../css/home/contact.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="landing-nav">
+        <div class="nav-wrapper">
+            <a href="../index.html" class="nav-logo">🐾 HappyTail Grooming</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="../php/login.php" class="btn-nav login">Login</a>
+                <a href="../php/login.php" class="btn-nav signup">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="section" style="padding-top: 100px;">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">We'd love to hear from you. Contact us to schedule an appointment or ask any questions.</p>
+        
+        <div class="contact-content" style="margin-top: 50px;">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div class="contact-details">
+                        <h3>Visit Us</h3>
+                        <p>123 Cat Street<br>Klang, Selangor<br>Malaysia</p>
+                        <p style="margin-top: 10px; color: var(--text-secondary); font-size: 0.9rem;">Free parking available on-site</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div class="contact-details">
+                        <h3>Call Us</h3>
+                        <p><strong>Phone:</strong> <a href="tel:+601164366303" style="color: var(--primary-color); text-decoration: none;">011-6436 6303</a></p>
+                        <p><strong>WhatsApp:</strong> <a href="https://wa.me/601164366303" target="_blank" style="color: var(--primary-color); text-decoration: none;">011-6436 6303</a></p>
+                        <p style="margin-top: 10px; color: var(--text-secondary); font-size: 0.9rem;">Call us during business hours for immediate assistance</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">✉️</div>
+                    <div class="contact-details">
+                        <h3>Email Us</h3>
+                        <p><strong>General Inquiries:</strong><br>
+                        <a href="mailto:info@happytailgrooming.com" style="color: var(--primary-color); text-decoration: none;">info@happytailgrooming.com</a></p>
+                        <p><strong>Appointments:</strong><br>
+                        <a href="mailto:appointments@happytailgrooming.com" style="color: var(--primary-color); text-decoration: none;">appointments@happytailgrooming.com</a></p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">🕒</div>
+                    <div class="contact-details">
+                        <h3>Business Hours</h3>
+                        <p><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM<br>
+                        <strong>Saturday:</strong> 10:00 AM - 4:00 PM<br>
+                        <strong>Sunday:</strong> Closed</p>
+                        <p style="margin-top: 10px; color: var(--text-secondary); font-size: 0.9rem;">We're closed on major holidays</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">🌐</div>
+                    <div class="contact-details">
+                        <h3>Follow Us</h3>
+                        <p style="display: flex; gap: 15px; margin-top: 10px;">
+                            <a href="#" style="color: var(--primary-color); text-decoration: none; font-size: 1.5rem;">📘</a>
+                            <a href="#" style="color: var(--primary-color); text-decoration: none; font-size: 1.5rem;">📷</a>
+                            <a href="#" style="color: var(--primary-color); text-decoration: none; font-size: 1.5rem;">🐦</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h3 style="margin-bottom: 20px; color: var(--text-primary);">Send us a Message</h3>
+                <form id="contactForm" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="011-6436 6303">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required placeholder="What is this regarding?">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required placeholder="Tell us how we can help you..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                </form>
+                <p id="formMessage" style="margin-top: 15px; text-align: center; display: none;"></p>
+            </div>
+        </div>
+
+        <div style="margin-top: 60px; padding: 40px; background: var(--bg-primary); border-radius: 16px; box-shadow: var(--shadow);">
+            <h3 style="text-align: center; font-size: 1.8rem; margin-bottom: 30px; color: var(--text-primary);">Frequently Asked Questions</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <div>
+                    <h4 style="color: var(--primary-color); margin-bottom: 10px;">How do I book an appointment?</h4>
+                    <p style="color: var(--text-secondary);">You can book an appointment online through our system by logging in or signing up. Alternatively, you can call us during business hours.</p>
+                </div>
+                <div>
+                    <h4 style="color: var(--primary-color); margin-bottom: 10px;">What should I bring?</h4>
+                    <p style="color: var(--text-secondary);">Just bring your cat! We provide all grooming supplies. If your cat has any special requirements or medical conditions, please let us know in advance.</p>
+                </div>
+                <div>
+                    <h4 style="color: var(--primary-color); margin-bottom: 10px;">How long does grooming take?</h4>
+                    <p style="color: var(--text-secondary);">Grooming time varies by service, typically ranging from 15 minutes for a nail trim to 2 hours for our premium package. We'll give you an estimated time when you book.</p>
+                </div>
+                <div>
+                    <h4 style="color: var(--primary-color); margin-bottom: 10px;">Do you accept walk-ins?</h4>
+                    <p style="color: var(--text-secondary);">We prefer scheduled appointments to ensure the best service, but we may accommodate walk-ins based on availability. Please call ahead to check.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 60px; text-align: center;">
+            <a href="../php/login.php" class="btn btn-primary" style="width: auto; padding: 15px 30px; margin-right: 15px;">Book Appointment</a>
+            <a href="../index.html" class="btn" style="width: auto; padding: 15px 30px; background: var(--bg-tertiary); color: var(--text-primary);">Back to Home</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="landing-footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+                <a href="../php/login.php">Login</a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2024 HappyTail Grooming. All rights reserved.</p>
+                <p>Professional Cat Grooming Services</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            const formMessage = document.getElementById('formMessage');
+            formMessage.style.display = 'block';
+            formMessage.style.background = '#d1fae5';
+            formMessage.style.color = '#065f46';
+            formMessage.style.padding = '15px';
+            formMessage.style.borderRadius = '8px';
+            formMessage.textContent = 'Thank you for your message! We will get back to you soon.';
+            document.getElementById('contactForm').reset();
+            setTimeout(() => {
+                formMessage.style.display = 'none';
+            }, 5000);
+        }
+    </script>
+
+    <!-- WhatsApp Chat Widget -->
+    <script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
+    <script>
+    var wa_btnSetting = {"btnColor":"#16BE45","ctaText":"WhatsApp Us","cornerRadius":40,"marginBottom":20,"marginLeft":20,"marginRight":20,"btnPosition":"right","whatsAppNumber":"01164366303","welcomeMessage":"Hey, how can we help you?","zIndex":999999,"btnColorScheme":"light"};
+    window.onload = () => {
+        _waEmbed(wa_btnSetting);
+    };
+    </script>
+</body>
+</html>
+
